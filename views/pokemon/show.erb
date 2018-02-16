@@ -1,0 +1,9 @@
+<h1><%= @pokemon[:title] %></h1>
+<p><%= @pokemon[:body] %></p>
+<!-- <a href="/<%= @pokemon[:id] %>/edit">Edit</a> -->
+<button class="EditBTN" type="button" name="button"><a href="/<%= @pokemon[:id] %>/edit">Edit</a></button>
+
+<form class="" action="/<%= @pokemon[:id] %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" name="" value="Delete">
+</form>

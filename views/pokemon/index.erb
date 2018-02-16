@@ -1,0 +1,9 @@
+
+<h1>Welcome to your party Pokemon</h1>
+
+<% @pokemon.each do |pokemon| %>
+<div>
+  <h3><a href="/<%= pokemon[:id] %>"><%= pokemon[:title] %></a></h3>
+  <p><%= pokemon[:body] %></p>
+</div>
+<% end %>
